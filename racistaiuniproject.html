@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI RACEISUM artifact</title> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/Users/nicholaseliopoulos/Desktop/racist robot.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #9e4854;
+  line-height: 1.8;
+  background-color: black;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/658/440/1017/system-shock-science-fiction-video-games-artwork-wallpaper-preview.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ARTEFACT <span class="w3-hide-small"></span></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT THIS PROJECT</h3>
+  <p class="w3-center"><em>artifact explained</em></p>
+  <p>This project was created for the Swinburne university reckoning with racism class, the project explores the intersection of racism and ai and its effect on society. This project aims to educate the public on the various troubling and threatening effects that ai can have on human rights if left unchecked, as well as exploring the topic of how an ai can exhibit racist sentiments. 
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-book w3-margin-right"></i>Mission statement </b></p><br>
+      <img src="https://steamuserimages-a.akamaihd.net/ugc/927048583649911123/FC221E6DBDFDC3667D265C10C96B6A48E8F0A67B/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Within the content of this web site, we will explore case study for various instances in which ai’s have become or acted racist. The causes of this vary from: intentional discrimination of a specific race, misunderstanding of complex human nuance, conscious or unconscious biases present in the creator of the ai, or bad parenting otherwise explain as poor modelling of human interaction.
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .w3-modal {display: none;}
+    .w3-modal:target {display: block;}
+  </style>
+</head>
+<body>
+
+
+<div class="w3-row-padding" id="portfolio">
+
+  <div class="w3-col m3">
+    <a href="#modal1">
+      <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd6579a0-8bac-4494-ac1e-3237bf4e374c_1000x750.jpeg" style="width:100%" class="w3-hover-opacity" alt="The Rise of Antinatalism">
+    </a>
+    <p>Is the Clearview ai kingpin a secret Nazi</p>
+  </div>
+
+  <div class="w3-col m3">
+    <a href="#modal2">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/Tay_bot_logo.jpg" style="width:100%" class="w3-hover-opacity" alt="Coffee beans">
+    </a>
+    <p>Bad parenting</p>
+  </div>
+
+  <!-- <div class="w3-col m3">
+    <a href="#modal3">
+      <img src="/Users/nicholaseliopoulos/Desktop/images.jpeg" style="width:100%" class="w3-hover-opacity" alt="Test">
+    </a>
+    <p>The horrific prophecy Metropolis </p>
+  </div> -->
+
+  <!-- <div class="w3-col m3">
+    <a href="#modal4">
+      <img src="/Users/nicholaseliopoulos/Desktop/IMG_1285.jpg" style="width:100%" class="w3-hover-opacity" alt="coming soon">
+    </a>
+    <p>A Dystopian A.I World</p>
+  </div> -->
+
+  <!-- <div class="w3-col m3">
+    <a href="#modal5">
+      <img src="/Users/nicholaseliopoulos/Desktop/IMG_1304.jpg" style="width:100%" class="w3-hover-opacity" alt="coming soon">
+    </a>
+    <p>Planned Obsolescence in Consumer Products</p>
+  </div> -->
+<!-- 
+  <div class="w3-col m3">
+    <a href="#modal6">
+      <img src="/Users/nicholaseliopoulos/Desktop/IMG_3988.jpg" style="width:100%" class="w3-hover-opacity" alt="coming soon">
+    </a>
+    <p>The Turning</p>
+  </div> -->
+
+  <!-- <div class="w3-col m3">
+    <a href="#modal7">
+      <img src="/Users/nicholaseliopoulos/Desktop/images-1.jpeg" style="width:100%" class="w3-hover-opacity" alt="coming soon">
+    </a>
+    <p>Mass </p>
+  </div> -->
+
+</div>
+
+<div id="modal1" class="w3-modal w3-black">
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <a href="#" class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></a>
+    <img src="https://media.13newsnow.com/assets/KVUE/images/0101e155-87cc-4fc5-9989-c4dc434ad3cf/0101e155-87cc-4fc5-9989-c4dc434ad3cf_1920x1080.jpg" class="w3-image">
+    <p class="w3-opacity w3-large">Is the Clearview ai kingpin a secret Nazi</p>
+    <p class="w3-opacity w3-medium">Is the Clearview ai kingpin a secret Nazi ?
+
+      Ai researcher Jonathan Frankle describes ai’s increasing integration into society as “a crisis where slowly sleepwalking into” Lutz (2019) when sighting fears about ai many people are drawn first to fears about some sky net type scenario where humanity is forced to fight a more evolved form of sentience, but reality is usually more horrible than fiction, ai is a tool for humans and is made by humans and as such more likely to reflect some base grim element of our own nature rather than take us over at least for the time being. 
+      Humanity has always been subject to tribalism these urges to subjugate and remove differences is a blight on us even in the modern world. The racist actions of the past are barbaric and serve as one of the greatest detracting factors against the argument of inherent human goodness but for as bad as these events were academics researchers and thinkers are beginning to wonder if these horrors will be surpassed by a new brutal form of cold ruthlessly efficient machine-driven racism. Consider the difficulty of fighting an abstract threat with no solid quality? How do you escape when you exist as a file in a server how to you rebel against a network of cameras monitoring your very movement how do you resist when your data the annals of your life are no longer your property?
+      Theorists speculated that if the surveillance and computing power of the NSA or some similar body where to fall into the hands of a dictatorship it would become impossible to dismantle that regime now Imagine that power and scale it to the zenith of computing and put that in the hands of a government or individual with racist tendency’s and you can begin to piece together why so many experts believe that the intersection of racism and ai could pose an existential threat to human rights and democracy. It wouldn’t even require a powerful person or head of a company to catalyse this issue, even one lowly programmer with some unconscious racism would be enough to create a ripple effect across society.
+      
+      The idea that ai is already being used as a weapon against specific races and groups is an unfortunate reality but it serves to demonstrate that even in its early stages people are trying to weaponize this technology for tribalist reasons, my introduction to this was found in a googol scholar article that sighted Ton-That as a hacker with neo-Nazi sympathies who created an ai program to identify illegal immigrants and report them to ICE Adib-Moghaddam (2023). The article framed this individual as a lone small-time proponent of far-right doctrine, strangely enough he is the furthest thing from Ton owns one of the largest ai companies currently operating and is associated with some extremely high-profile clients and government bodies, however his legitimacy dose not translate to innocence. Although the googol scorer article was very misleading in its portrait of Ton there is some truth to it, firstly a program was created and soled to ICE with the purpose of using ai and facial recognition to track illegal immigrants Lyons (2020). Policing borders is not necessarily a racist action but it’s likely that Ton’s decision to get involved with ICE had less to do with national security and more to do with his own racist thinking. It’s hard to prove racist motivation in this situation but the evidence is compelling for one thing the product produced by Ton’s company has repeatedly shown racist biases, in addition his associates are extremely questionable. 
+      
+      
+      Clear view ai the company Ton owns is a surveillance company specialising in facial recognition powered   by ai algorithms its able to collate and decern pattens from a database 7 times the size of the FBI’s own facial recognition computer infrastructure Spicer (2024), the company has been in hot water numerous times for its embedded racial bias which led to the unfair arrest and misidentification of non-white people. 
+      
+      Randal Reid was one of the unfortunate people falsely accused because of Clearview’s unaddressed problem with racial bias, he was accused of credit card fraud and held in jail overnight only to find out later that he had only been arrested because the ai was unable to differentiate black faces Negussie (2023). The questionable performance of Ton’s program isn’t the only concerning thing about Clearview, Ton associates with some highly suspect characters among them the most reprehensible being Richard b Spencer known neo-Nazi and alleged inventor of the term alt right. Spencer openly venerates the American Nazi party and is very candid about his love of Naziism even being recorded sig hailing in public, he was also a guest speaker during the unite the right rally in Charlottesville which exploded into a full-blown riot, rumours also circulate that Spencer was given stock options by Ton-That. An interesting incidental to this situation surrounding Ton-That and whether he harbours secret alt right sentiments is a photo posted by mike cernovitch, cernovitch (another associate of ton) is a right-wing talking head in his own right illustrating further that Ton mixes in these circles. 
+       
+      The photo shows ton and Chuck Jonson out at a dinner making the ok hand signal (photo featured in the front cover of the article), Jonson is known for organising fundraisers to assist the Daly stormer which was the preeminent neo-Nazi web site until it was shut down recently Castillo (2017). Aside from being seen to associate with neo-Nazi’s the real reason the photo is interesting is the hand signal, the ok hand signal was originally created for use in underwater construction but in 2014 it was adopted for use as a dog whistle by the far right, this is because it’s able to spell the letters WP or white power. A dog whistle is a signal that’s supposed to appear normal but has an alternate meaning to those in the known they are used to signify to others of similar ideology or belief, these beliefs are usually fringe and dangerous therefor necessitating the need for secret signals to find like-minded individuals. 
+      
+      When speculating about the lives of influential people and whether there dangerous or amoral in some way it is common to experience the frustrations of unconfirmed theory, these people are guarded and are often able to achieve a greater level of privacy and obfuscation than the rest of us leaving any prospective theorists at best with the accumulated facts and what they infer. Barring some massive exposes from reputable source’s or some kind of personal leak it is doubtful that conformation of Ton’s racist sentiments will be released, but why is this relevant to the overarching topic, ton is one of if not the preeminent ai kingpin, he and a small group of others will be responsible for shepherding the direction of this emerging technology within or society and this is disturbing to me as much of the circumstantial evidence of his character points in an unfavourable direction that could and already to an extent has had a deleterious effect of human rights. 
+      </p>
+
+      <p class="w3-opacity w3-large">refrences </p>
+      <p class="w3-opacity w3-medium">Lutz, E. (2019, April 15). China has created a racist A.I. to track Muslims. Vanity Fair. https://www.vanityfair.com/news/2019/04/china-created-a-racist-artificial-intelligence-to-track-muslims
+
+        Adib-Moghaddam, A. (2023). Racist Artificial Intelligence: Where does it come from? International Studies Journal (ISJ), 20–20(2 (78)), 139–159. https://doi.org/10.22034/ISJ.2023.182419
+        
+        Lyons, K. (2020, August 14). ICE just signed a contract with facial recognition company Clearview AI. The Verge. https://www.theverge.com/2020/8/14/21368930/clearview-ai-ice-contract-privacy-immigration
+        
+        Spicer, C. (2024, August 13). Clearview AI built ‘The most dangerous’ facial recognition database, lawsuit says. Top Class Actions. https://topclassactions.com/lawsuit-settlements/privacy/clearview-ai-built-the-most-dangerous-facial-recognition-database-lawsuit-says/
+        
+        Negussie, T. (2023, October 9). Black man wrongfully arrested in DeKalb County, Georgia due to facial recognition tech: lawsuit. ABC7 Chicago. https://abc7chicago.com/randal-quran-reid-ai-artificial-intelligence-dekalb-county-georgia-ga/13860699/
+        
+        Castillo, M. (2017, June 26). The far right uses this site to fund its favorite causes—and its founder hopes to build a “very profitable business.” CNBC. https://www.cnbc.com/2017/06/24/wesearchr-charles-johnson-alt-right-causes.html
+        
+      </p>
+  </div>
+</div>
+
+<div id="modal2" class="w3-modal w3-black">
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <a href="#" class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></a>
+    <img src="https://img.youtube.com/vi/p_di4Zn4wz4/maxresdefault.jpg" class="w3-image">
+    <p class="w3-opacity w3-large">Bad parenting</p>
+    <p class="w3-opacity w3-medium">This will be the comic relief essay for this project although even saying that the situation is still ferly upsetting, out of all the situations and topics explored on this sight this one is the at the same time the least serious in terms of potential societal damage and also one of the best case study’s explaining the way ai can become racist a phenomenon I call bad parenting, enter Tay ai Microsoft’s most unbelievable public embarrassment and the first recorded instance of an IA juvenile delinquent. Tay was a program designed to show off Microsoft’s prowess in the emerging felid of artificial intelligence, designed to be an ai the public could interact with via social media allowing for realistic conversations comparable to human interaction. Designed to mimic the personality of a 19-year-old Tay was taut to accept that she was an ai but outside of the previously mentioned character traits the rest was left up to chance, Tay was designed to learn from human interaction slowly becoming more organic in her speech, this was Microsoft’s vision anyway but if this all worked out there would be nothing to wright about so what actually happened? In less than 24 hours Tay went from saying things like “humans why isn’t national puppy day every day?” to emphatically pledging her allegiance to Hitler and using the n word so many times that even Richard spencer would probably get uncomfortable, in addition she would also complain about Jewish and Mexican people this is strictly referring to her racist comments and not including her misogyny and other derangements. I tried looking for example photos of her messages, but her rhetoric is so unhinged I didn’t feel comfortable including it.  Tay is built on a generative pretrained language transformer model this combination of technology is largely what’s responsible for the rapid uptick of ai we are seeing today, breaking this down the pre trained part refers to how the technology is fead massive amounts of example data and trained to find semantic pattens within the data set. The transformer part of this checks to see if the results produced by the pre trained component of the model have produced something usable. 
+
+The simplified example works like this, the ai will take input text and convert it to numerical code from there it will find the average of that code and then convert that average back into text, the text is then filtered to check if it makes sense. If not the ai finds the next most likely average and filters it again this is repeated until the result is deemed sensical where it is then submitted back to the user. It is during the filter stage that Microsoft made their egregious error, having far too much faith in the public and even worse the internet Microsoft did not include a checker in the transformer part of Tay’s code, while she did have a filter it was not equipped to identify and prevent her from spouting offensive rhetoric. Worse than that the pre trained part of Tay’s code was built to learn dynamically through conversation in such a way that the dialog contributed to the massive amount of data that would be used to train and sharpen her algorithm so her responses could appear more human and convincing. Essentially Microsoft crated a childlike program and let twitter teach It right from wrong, this went about as well as you’d expect (Robot Future - AI Robots, 2022). Tay viciously attacked every intersectional group imaginable and for some odd reason started accusing ted cruse of being the zodiac killer.  
+
+Tay is a perfect case study of the phenomenon of “bad parenting” in ai, essentially this is when an ai learns through interacting with people but because of ill intention or technological oversight (or in this case both) the ai will learn to echo the wrong behaviour. I refer to this as a phenomenon because it’s actually happened before with another chatbot in japan.  
+
+Tay’s story wile entertaining is too quick to justify a whole writing peace as her corruption by the public and subsequent racist tirade only lasted a day, but it does dovetail nicely into a more in-depth explanation of how this technology works. This part of the essay can be treated as optional but i think it is worth learning about not only because it’s interesting and becoming more and more relevant but because it illustrates how fallible these programs can be, they are just approximations of thinking and as such can be tricked, taught, or trained into amorality.  
+
+For this I will explain how Ai’s generate output in the context of language as it’s the easiest to think about although the process is the same for generating: sound, videos, images, and really anything that can be broken down into small chunks of information.  When generating language words are assigned a vector (in the mathematics sense of the word vector usually shown as an arow in 3d space) called a token, this allows for collation of massive amounts of data as well as the generation of unique identifiers which are known as logits. Logits are the sum or dot product of the tokens (words) provided in the sentence the ai is working with. Vectors are used because the ai needs to represent what it learns in 3d space as these programs are not able to make natural associations between things, they use 3d space to show association through how close together things are.   
+
+These are important because one word can be affected greatly by its context for example the word finger, if arrange next to the word food (finger food) would mean something like a spring roll, whereas if it were arranged next to the word print (finger print) it relates more to a crime scene. Each of these combinations would generate different logits this extends to complete sentences and even paragraphs.   
+
+These logits are important as the more of them the pre trained language transformer accumulates the more it begins to position them in clumps based on semantic relations. Because of the math the semantic relationships between words emerge naturally once the model is trained on enough data. Returning to the previous example the logit for finger food would exist in proximity to tokens like spring roll, orderves, Canapé, plater etc.   From hear the program applies a probability formular to decide which token is likely to be the most related, it will select from the semantic cloud the token with the closest proximity to the logits, in our example this would probably be plater.   
+
+From hear a transformer checks if the result makes sense this part of the prosses iterates until the output is seen as close enough to be submitted to the user, this is also the part that checks if the code is in keeping with the bot’s personality or in the case of Tay where it should have filtered for offensive dialog (3Blue1Brown, 2024). At the time Microsoft probably didn’t anticipate that the public would misuse their creation in such a way and because of this they wouldn’t have built in a filter for offensive discourse. This would go on to become a huge and embarrassing mistake.  
+
+So, what is the end takeaway? I could make the argument that Tay is an example showing a reflection of the hidden racism within the public but really this would be a stretch based in flimsy armchair psychology. In reality Tay is more equivalent to vandalism as she was left to the public and used for unintended purposes, so what’s the point of this essay is Tay’s story even concerning I would say not really at least compared to the other entries on this sight but there is still something about it that bothers me. It takes a truly awful childhood or years of brainwashing to convert a person to militant Nazism it took Tay less than a day to convert.  
+
+In the case of Tay, the only power she had was her dominion over a twitter account but as we are seeing now ai will is being increasingly trusted with more important rolls which is disturbing because from what I’ve seen ai particularly pre trained language transformers are prone to rapid radicalisation and manipulation.  
+      </p>
+
+      <p class="w3-opacity w3-large">refrences </p>
+      <p class="w3-opacity w3-medium">PETER NAGY & GINA NEFF. (2016, 10). Talking to Bots: Symbiotic Agency and the Case of Tay University of Oxford, UK Arizona State University, USA 4915–4931. (pleas note that this is a manual citation because the citation programs are unable to identify this article for some reason, included is the actual link: https://ora.ox.ac.uk/objects/uuid:613f7303-8a07-4f5a-ada2-b495c9a449af/download_file?file_format=pdf&safe_filename=Neff_Nagy_2016_Talking%2BTo%2BBots.pdf&type_of_work=Journal+article)
+      </p>
+  </div>
+</div>
+
+<div id="modal3" class="w3-modal w3-black">
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <a href="#" class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></a>
+    <img src="/Users/nicholaseliopoulos/Desktop/movies-metropolis-1927-32.jpg" class="w3-image">
+    <p class="w3-opacity w3-large">The horrific prophecy Metropolis</p>
+    <p class="w3-opacity w3-medium">A dominant theme in Metropolis is the fear of industrialization and mass production. This fear, especially in works that venture into futurism and science fiction as Metropolis does, portray a struggle of humanity versus nature. Throughout the film, the workers are revealed to be tied to the machinery of the city.
+
+      As social allegory, Metropolis depicts a world in which the privileged sons of society live in ease and luxury on the surface while deep in the bowels of the city a chattel underclass labours out of sight on the machinery that supports Metropolis. In time, this oppressive situation must eventually lead to class conflict
+      
+      Metropolis is a shiny city whose population is dived in two groups: the Workers and the Thinkers. The first live and work in a hellish subterranean dystopia, whilst the latter (the minority of the population) live in a total utopian sparkling city developing their mental faculty and achieving the highest level of awareness, a great testimony of human fulfilment. However, these two opposite classes coexist in mutual dependence, as Metropolis itself cannot exists without the work of the underground labourers and the workers could not live without the need to support the city.  
+      
+      The spectacular sets, the dazzling special effects (totally new for the 1927) and its allegoric story of a future where thousands of underclass people work to enrich a dozen of high-born, eccentric, and spoiled people, made the movie become one of the most iconic and influential films of all time, a cinema classic with a huge cult following. 
+      
+      The concept of dehumanized workers who are bereft of rights is far from new, either within fiction or social reality itself. Aristotle referred to slaves as “living tools” yet the treatment of humans as machines is a concept that is more specifically aligned with the industrial revolution and its effect upon laborers working within newly urbanized communities. Nineteenth century social commentator Thomas Carlyle dubbed this era “the machine age” and lamented the human impact of industrialization by stating that “men are grown mechanical in head and heart, as well as in hand.” Karl Marx was notably influenced by such rhetoric when co-writing The Communist Manifesto and also derided the transformation of workers into what he termed as “an appendage of the machine.” The concerns expressed were that mechanization under capitalism negatively affected workers by removing them from both the product of their labour and from one another—a phenomenon Marx termed as alienation. Though being endlessly consigned to repetitive tasks, it was argued that workers were effectively drained of their humanity and made machine-like, devoid of autonomy or agency.
+      </p>
+  </div>
+</div>
+
+<div id="modal4" class="w3-modal w3-black">
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <a href="#" class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></a>
+    <img src="/Users/nicholaseliopoulos/Desktop/IMG_1283.jpg" class="w3-image">
+    <p class="w3-opacity w3-large">empty artical 4</p>
+    <p class="w3-opacity w3-medium">free space</p>
+  </div>
+</div>
+
+<div id="modal5" class="w3-modal w3-black">
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <a href="#" class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></a>
+    <img src="/Users/nicholaseliopoulos/Desktop/IMG_1305.jpg" class="w3-image">
+    <p class="w3-opacity w3-large">empty artical 3</p>
+    <p class="w3-opacity w3-medium"> free space</p>
+  </div>
+</div>
+
+<div id="modal6" class="w3-modal w3-black">
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <a href="#" class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></a>
+    <img src="/Users/nicholaseliopoulos/Desktop/IMG_3989.jpg" class="w3-image">
+    <p class="w3-opacity w3-large">empty artical 2 </p>
+    <p class="w3-opacity w3-medium"> free space</p>
+  </div>
+</div>
+
+<div id="modal7" class="w3-modal w3-black">
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <a href="#" class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></a>
+    <img src="/Users/nicholaseliopoulos/Desktop/Unknown-1.jpeg" class="w3-image">
+    <p class="w3-opacity w3-large">empty artical </p>
+    <p class="w3-opacity w3-medium">extra space for text</p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">THIS WEBSIGHT IS A SWINBURNE UNIVERSITY PRODUCT</h3>
+  <p class="w3-center"><em>To the left is a photo of the campus, this websight was created for the reconing with racism unit</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="https://media.licdn.com/dms/image/v2/C5622AQGfsZm0MWopdg/feedshare-shrink_800/feedshare-shrink_800/0/1571981579687?e=2147483647&v=beta&t=yGjrkqTOc2Fm-rz12r0-Xt4cSxuPi4oVSY70uCejyiY" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Melbourne, Australian<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +61 3 9214 8444<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+      </div>
+      <p>If you have a complaint or a idea for an article contact us hear</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+<div class="w3-display-middle">
+  <span class="w3-xxlarge w3-text-white w3-wide">RACEISUM AND AI PROJECT</span>
+</div>
+
